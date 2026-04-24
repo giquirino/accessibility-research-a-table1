@@ -116,7 +116,7 @@ O Banco Original performou **16 pontos acima** do PicPay. Ambos cometem os mesmo
 
 A diferença está no que o Original **não tem**: nenhum botão sem nome, nenhum problema de contraste, nenhum link sem texto discernível — indicando maior maturidade no processo de desenvolvimento acessível.
 
-> Os JSONs brutos das auditorias estão em [`lighthouse-picpay-raw.json`](./lighthouse-picpay-raw.json) e [`lighthouse-original-raw.json`](./lighthouse-original-raw.json).
+> Os JSONs brutos das auditorias estão em [`evidence/lighthouse-picpay-raw.json`](./evidence/lighthouse-picpay-raw.json) e [`evidence/lighthouse-original-raw.json`](./evidence/lighthouse-original-raw.json).
 
 ---
 
@@ -160,7 +160,7 @@ npm install -g lighthouse
 lighthouse https://localhost:3000 \
   --only-categories=accessibility \
   --output=json \
-  --output-path=./evidencias/lighthouse-$(date +%Y%m%d).json \
+  --output-path=./evidence/lighthouse-$(date +%Y%m%d).json \
   --chrome-flags="--headless"
 ```
 
@@ -172,4 +172,4 @@ Qualquer score abaixo de 90 deve bloquear o merge — da mesma forma que um test
 
 ## Referências
 
-Veja o arquivo [`referencias.md`](./referencias.md) para a lista completa de fontes.
+Veja o arquivo [`references.md`](./references.md) para a lista completa de fontes.
